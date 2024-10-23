@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="LTH__LOGO_LTH.png" type="icon">
+    <title>Menú Estático y Lateral LTH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a CSS -->
+</head>
+
+<body>
+
+    <!-- Barra superior con menú lateral y menú estático -->
+    <header class="navbar navbar-light bg-light shadow-sm">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Botón para el menú lateral -->
+            <button id="menu-toggle" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+                <span class="iconify" data-icon="mdi:menu" data-width="24"></span> Menú
+            </button>
+
+            <!-- Menú Estático -->
+            <div class="d-flex justify-content-around align-items-center w-100">
+                <a href="#" class="menu-link mx-3">
+                    <span class="iconify" data-icon="mdi:magnify" data-width="30"></span><br>
+                    <span>Buscar</span>
+                </a>
+                <a href="#" class="menu-link mx-3">
+                    <span class="iconify" data-icon="mdi:account" data-width="30"></span><br>
+                    <span>Contáctanos</span>
+                </a>
+                <a href="#" class="menu-link mx-3">
+                    <span class="iconify" data-icon="mdi:briefcase-search" data-width="30"></span><br>
+                    <span>Buscador de Productos</span>
+                </a>
+                <a href="#">
+                    <img src="LTH__LOGO_LTH.png" alt="Logo LTH" class="mx-3">
+                </a>
+                <a href="#" class="menu-link mx-3">
+                    <span class="iconify" data-icon="mdi:map-marker-radius" data-width="30"></span><br>
+                    <span>Centros de Servicio</span>
+                </a>
+                <a href="#" class="menu-link mx-3">
+                    <span class="iconify" data-icon="mdi:home" data-width="30"></span><br>
+                    <span>LTH A Domicilio</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Lateral con Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5>Productos</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:car-battery" data-width="20"></span> Baterías</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:filter" data-width="20"></span> Filtros</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:oil" data-width="20"></span> Lubricantes</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:motorbike" data-width="20"></span> Moto-Baterías</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:battery-charging" data-width="20"></span> Baterías Alcalinas</a></li>
+            </ul>
+            <h5>Baterías Avanzadas</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:shield" data-width="20" data-height="20"></span>LTH PROTECT</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:star-circle" data-width="20" data-height="20"></span>LTH EVOLUTION</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:star-circle-outline" data-width="20" data-height="20"></span>LTH EVOLUTION AUXILIAR</a></li>
+            </ul>
+            
+            <h5>Ecología</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:certificate-outline" data-width="20" data-height="20"></span> Certificaciones</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:account-group-outline" data-width="20" data-height="20"></span> Programas de Responsabilidad</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:recycle"  data-width="20" data-height="20"></span> Reciclaje</a></li>
+            </ul>
+            <h5>Soporte</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:book-open-outline" data-width="20" data-height="20"></span> ABC de tus Productos</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:shield-check-outline" data-width="20" data-height="20"></span> Garantía</a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:tools" data-width="20" data-height="20"></span> Instalación y Reemplazo</a></li>
+            </ul>
+
+            <h5>Acerca de LTH</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"><span class="iconify" data-icon="mdi:history" data-width="20" data-height="20"></span> La historia de LTH</a></li>
+            </ul>
+
+            <h5>Experiencia LTH</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:blogger" data-width="20" data-height="20"></span> Blog</a></li>
+            </ul>
+
+            <h5>Refaccionarias</h5>
+            <ul class="list-unstyled">
+                <li><a href="#"><span class="iconify" data-icon="mdi:car-wrench" data-width="20" data-height="20"></span> Refaccionarias</a></li>
+            </ul>
+
+            <h5>Venta</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"><span class="iconify" data-icon="mdi:tools" data-width="20" data-height="20"></span> Centros de Servicios</a></li>
+              <li><a href="#"><span class="iconify" data-icon="mdi:truck-delivery" data-width="20" data-height="20"></span> LTH a Domicilio</a></li>              
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+<section class="hero-section py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="display-4">¡Las Mejores Baterías, Solo Aquí!</h1>
+    <h2 class="mt-3"><strong>¡Pide tu batería a domicilio!</strong></h2>
+    <h3><em>Contáctanos al...</em></h3>
+  </div>
+
+  <div class="container search-bar mt-5">
+    <h3 class="text-center mb-4">Encuentra tu Batería</h3>
+    
+    <!-- Categorías -->
+    <div class="row text-center mb-3">
+      <div class="col icon-container">
+        <img src="auto-icon.png" alt="Auto" class="img-fluid mb-2">
+        <p>Auto</p>
+      </div>
+      <div class="col icon-container">
+        <img src="camion-icon.png" alt="Servicio Pesado" class="img-fluid mb-2">
+        <p>Servicio Pesado</p>
+      </div>
+      <div class="col icon-container">
+        <img src="moto-icon.png" alt="Motocicleta" class="img-fluid mb-2">
+        <p>Motocicleta</p>
+      </div>
+      <div class="col icon-container">
+        <img src="cuatrimoto-icon.png" alt="Cuatrimoto" class="img-fluid mb-2">
+        <p>Cuatrimoto</p>
+      </div>
+      <div class="col icon-container">
+        <img src="gokart-icon.png" alt="Go-Kart" class="img-fluid mb-2">
+        <p>Go-Kart</p>
+      </div>
+    </div>
+
+    <!-- Filtros de búsqueda -->
+    <div class="row">
+      <div class="col-md">
+        <select class="form-select">
+          <option selected>Año</option>
+          <!-- Añadir opciones de año -->
+        </select>
+      </div>
+      <div class="col-md">
+        <select class="form-select">
+          <option selected>Marca</option>
+          <!-- Añadir opciones de marca -->
+        </select>
+      </div>
+      <div class="col-md">
+        <select class="form-select">
+          <option selected>Modelo</option>
+          <!-- Añadir opciones de modelo -->
+        </select>
+      </div>
+      <div class="col-md">
+        <select class="form-select">
+          <option selected>Motor</option>
+          <!-- Añadir opciones de motor -->
+        </select>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-danger w-100">Buscar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Filtros y Productos -->
+<section class="filter-products-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Filtrar Productos y Resultados</h2>
+    <div class="row">
+      
+      <!-- Filtros -->
+      <div class="col-md-3">
+        <h5>Filtrar por:</h5>
+
+        <!-- Filtro por tipo de batería -->
+        <div class="mb-4">
+          <h6>Tipo de Batería</h6>
+          <select class="form-select">
+            <option selected>Selecciona un tipo</option>
+            <option value="auto">Auto</option>
+            <option value="moto">Motocicleta</option>
+            <option value="cuatrimoto">Cuatrimoto</option>
+            <option value="pesado">Servicio Pesado</option>
+            <option value="gokart">Go-Kart</option>
+          </select>
+        </div>
+
+        <!-- Filtro por marca -->
+        <div class="mb-4">
+          <h6>Marca</h6>
+          <select class="form-select">
+            <option selected>Selecciona una marca</option>
+            <option value="lth">LTH</option>
+            <option value="varta">Varta</option>
+            <option value="optima">Optima</option>
+          </select>
+        </div>
+
+        <!-- Filtro por precio -->
+        <div class="mb-4">
+          <h6>Precio</h6>
+          <select class="form-select">
+            <option selected>Rango de Precio</option>
+            <option value="low">Menos de $500</option>
+            <option value="mid">$500 - $1000</option>
+            <option value="high">Más de $1000</option>
+          </select>
+        </div>
+
+        <!-- Filtro por capacidad -->
+        <div class="mb-4">
+          <h6>Capacidad</h6>
+          <select class="form-select">
+            <option selected>Selecciona la capacidad</option>
+            <option value="low">Baja</option>
+            <option value="mid">Media</option>
+            <option value="high">Alta</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-md-9">
+        <div class="row">
+          
+          <!-- Producto 1: Baterías -->
+          <div class="col-md-4 product-item">
+            <img src="https://storage.googleapis.com/a1aa/image/rAvFoKHYeOwvDqGljs90YyyMJsJV5KPDKKuMH1IAXGMzgw0JA.jpg" alt="Baterías para autos" class="img-fluid rounded mb-3">
+            <h3>Baterías</h3>
+            <p>Las mejores baterías para tu auto con máxima durabilidad.</p>
+            <button class="btn btn-primary w-100">Ver más</button>
+          </div>
+
+          <!-- Producto 2: Moto-Baterías -->
+          <div class="col-md-4 product-item">
+            <img src="https://storage.googleapis.com/a1aa/image/z1q5vRIZ3g4KGtsVMPLg6uK52wQZI4GfB4HM4IblR4n0gw0JA.jpg" alt="Moto-Baterías" class="img-fluid rounded mb-3">
+            <h3>Moto-Baterías</h3>
+            <p>Baterías especializadas para motocicletas, rendimiento superior.</p>
+            <button class="btn btn-primary w-100">Ver más</button>
+          </div>
+
+          <!-- Producto 3: Lubricantes -->
+          <div class="col-md-4 product-item">
+            <img src="https://storage.googleapis.com/a1aa/image/YtE9rsxDgm6gJRO6D1cf2mDTVsCjpLFs827K3vV3Jka3gw0JA.jpg" alt="Lubricantes" class="img-fluid rounded mb-3">
+            <h3>Lubricantes</h3>
+            <p>Lubricantes de alta calidad para mantener el motor en excelente estado.</p>
+            <button class="btn btn-primary w-100">Ver más</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Pilas Alcalinas -->
+<section class="alkaline-batteries-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Pilas Alcalinas</h2>
+    <div class="row">
+      
+      <!-- Producto 1: Pilas AA -->
+      <div class="col-md-4 product-item">
+        <img src="https://example.com/pilas-AA.jpg" alt="Pilas AA" class="img-fluid rounded mb-3">
+        <h3>Pilas AA</h3>
+        <p>Pilas AA de larga duración para tus dispositivos electrónicos.</p>
+        <button class="btn btn-primary w-100">Ver más</button>
+      </div>
+
+      <!-- Producto 2: Pilas AAA -->
+      <div class="col-md-4 product-item">
+        <img src="https://example.com/pilas-AAA.jpg" alt="Pilas AAA" class="img-fluid rounded mb-3">
+        <h3>Pilas AAA</h3>
+        <p>Pilas AAA compactas, ideales para controles remotos y otros aparatos pequeños.</p>
+        <button class="btn btn-primary w-100">Ver más</button>
+      </div>
+
+      <!-- Producto 3: Pilas D -->
+      <div class="col-md-4 product-item">
+        <img src="https://example.com/pilas-D.jpg" alt="Pilas D" class="img-fluid rounded mb-3">
+        <h3>Pilas D</h3>
+        <p>Pilas D para dispositivos de alto consumo energético.</p>
+        <button class="btn btn-primary w-100">Ver más</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección de Centros de Servicio LTH -->
+<section class="service-section py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Columna Izquierda: Información y Filtros -->
+          <div class="col-md-6">
+              <h3 class="text-primary">Centros de Servicio LTH</h3>
+              <p>Expertos en baterías: ofrecemos venta, diagnóstico e instalación, ajustes, garantías, servicio a domicilio y reciclaje de baterías usadas.</p>
+              
+              <!-- Icono de Ubicación y Texto -->
+              <div class="text-center mb-4">
+                  <span class="location-icon" style="font-size: 2rem; color: red;">&#x1F4CD;</span> <!-- Icono de Ubicación -->
+                  <p><strong>Utiliza tu ubicación</strong></p>
+              </div>
+
+              <!-- Filtros de Ubicación -->
+              <form>
+                  <div class="row mb-3">
+                      <div class="col">
+                          <select class="form-select">
+                              <option selected>País</option>
+                              <!-- Añadir opciones de país aquí -->
+                          </select>
+                      </div>
+                      <div class="col">
+                          <select class="form-select">
+                              <option selected>Estado</option>
+                              <!-- Añadir opciones de estado aquí -->
+                          </select>
+                      </div>
+                      <div class="col">
+                          <select class="form-select">
+                              <option selected>Ciudades</option>
+                              <!-- Añadir opciones de ciudades aquí -->
+                          </select>
+                      </div>
+                  </div>
+                  
+                  <!-- Botón de Buscar -->
+                  <div class="text-center">
+                      <button type="submit" class="btn btn-danger btn-lg w-100">BUSCAR</button>
+                  </div>
+              </form>
+          </div>
+
+          <!-- Columna Derecha: Imagen del Centro de Servicio -->
+          <div class="col-md-6">
+              <img src="https://via.placeholder.com/500x300" alt="Centro de Servicio LTH" class="img-fluid rounded shadow">
+          </div>
+      </div>
+      <div id="location-info" class="mt-4 text-center">
+        <!-- Aquí se mostrará la ubicación -->
+    </div>
+</div>
+
+<script>
+    // Función para obtener la ubicación del usuario
+    document.getElementById("get-location").addEventListener("click", function() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("La geolocalización no es soportada por este navegador.");
+        }
+    });
+
+    // Mostrar la ubicación
+    function showPosition(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        document.getElementById("location-info").innerHTML = 
+            "<h5>Tu ubicación aproximada:</h5>" +
+            "<p>Latitud: " + lat + "<br>Longitud: " + lon + "</p>";
+        // Aquí puedes usar las coordenadas para buscar centros de distribución cercanos
+    }
+
+    // Manejar errores de geolocalización
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                alert("Usuario denegó la solicitud de geolocalización.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("La información de ubicación no está disponible.");
+                break;
+            case error.TIMEOUT:
+                alert("La solicitud para obtener la ubicación ha expirado.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("Se ha producido un error desconocido.");
+                break;
+        }
+    }
+
+    // Opciones de estados y ciudades (puedes modificar estas funciones según tu lógica)
+    document.getElementById("country").addEventListener("change", function() {
+        const country = this.value;
+        if (country === "MX") {
+            document.getElementById("state").innerHTML = `
+                <option value="CDMX">Ciudad de México</option>
+                <option value="JAL">Jalisco</option>
+                <option value="NLE">Nuevo León</option>
+            `;
+        } else if (country === "US") {
+            document.getElementById("state").innerHTML = `
+                <option value="CA">California</option>
+                <option value="TX">Texas</option>
+                <option value="NY">Nueva York</option>
+            `;
+        }
+    });
+
+    document.getElementById("state").addEventListener("change", function() {
+        const state = this.value;
+        if (state === "CDMX") {
+            document.getElementById("city").innerHTML = `
+                <option value="CDMX">Ciudad de México</option>
+            `;
+        } else if (state === "JAL") {
+            document.getElementById("city").innerHTML = `
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Zapopan">Zapopan</option>
+            `;
+        } else if (state === "CA") {
+            document.getElementById("city").innerHTML = `
+                <option value="Los Angeles">Los Ángeles</option>
+                <option value="San Francisco">San Francisco</option>
+            `;
+        }
+    });
+</script>
+  </div>
+</section>
+
+    
+
+<!-- Footer -->
+<footer class="footer bg-light py-4">
+  <div class="container">
+      <div class="row">
+          <!-- Columna 1: Logo y Ubicación -->
+          <div class="col-md-3">
+              <img src="https://via.placeholder.com/100x50" alt="Logo LTH" class="img-fluid mb-3"> <!-- Reemplaza con el logo adecuado -->
+              <p>Ubicación Pendiente</p>
+              <p>72310</p>
+              <p>Número Pendiente</p>
+          </div>
+          
+          <!-- Columna 2: Contacto -->
+          <div class="col-md-3">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Productos</a></li>
+                  <li><a href="#">Baterías</a></li>
+                  <li><a href="#">Filtros</a></li>
+                  <li><a href="#">Lubricantes</a></li>
+                  <li><a href="#">Moto Baterías</a></li>
+                  <li><a href="#">Baterías Alcalinas</a></li>
+                  <li><a href="#">Tecnología</a></li>
+              </ul>
+          </div>
+
+          <!-- Columna 3: Acerca de LTH -->
+          <div class="col-md-3">
+              <h5>Acerca de LTH</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Ecología</a></li>
+                  <li><a href="#">Certificaciones</a></li>
+                  <li><a href="#">Programas de Responsabilidad</a></li>
+                  <li><a href="#">Reciclaje</a></li>
+                  <li><a href="#">Soporte</a></li>
+                  <li><a href="#">ABC de Tus Productos</a></li>
+                  <li><a href="#">Garantía</a></li>
+                  <li><a href="#">Instalación y Reemplazo</a></li>
+                  <li><a href="#">Mantenimiento</a></li>
+              </ul>
+          </div>
+
+          <!-- Columna 4: Refaccionarias -->
+          <div class="col-md-3">
+              <h5>Refaccionarias</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Venta</a></li>
+                  <li><a href="#">Centros de Servicio</a></li>
+                  <li><a href="#">LTH a Domicilio</a></li>
+              </ul>
+              <h5>Síguenos</h5>
+              <ul class="list-unstyled d-flex">
+                  <li><a href="#" class="me-3"><img src="https://via.placeholder.com/20x20" alt="Facebook"></a></li>
+                  <li><a href="#" class="me-3"><img src="https://via.placeholder.com/20x20" alt="Instagram"></a></li>
+                  <li><a href="#" class="me-3"><img src="https://via.placeholder.com/20x20" alt="Twitter"></a></li>
+                  <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="YouTube"></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script> <!-- Enlace a JS -->
+</body>
+
+</html>

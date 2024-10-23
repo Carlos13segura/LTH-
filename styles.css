@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Estilos para el encabezado */
+header {
+  padding: 10px 0;
+}
+
+/* Estilos del menú lateral */
+.offcanvas {
+  background-color: #ffffff; /* Fondo blanco para el menú lateral */
+  padding: 20px;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #dee2e6; /* Línea inferior en el encabezado del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu-link {
+  color: #343a40; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.menu-link:hover {
+  color: #dc3545; /* Color al pasar el mouse */
+}
+
+/* Estilos para la sección principal */
+.hero-section {
+  background-color: #e9ecef; /* Fondo gris claro */
+  padding: 40px 0;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los contenedores de iconos */
+.icon-container {
+  text-align: center;
+}
+
+/* Estilos para los botones */
+.btn-danger {
+  background-color: #dc3545; /* Color de fondo rojo */
+  border: none; /* Sin borde */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para las secciones de productos */
+.product-item {
+  text-align: center;
+  margin-bottom: 30px; /* Espacio entre productos */
+}
+
+.product-item img {
+  height: 200px; /* Altura fija para las imágenes de productos */
+  object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 20px 0;
+}
+
+.footer h5 {
+  margin-bottom: 15px; /* Espacio inferior para los encabezados */
+}
+
+.footer a {
+  color: #343a40; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos para la sección de geolocalización */
+.location-icon {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
